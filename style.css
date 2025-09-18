@@ -1,0 +1,21 @@
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    max-width: 900px;
+    margin: 0 auto;
+}
+header{
+    background-color: blueviolet;
+    padding: .4em;
+}
+header > h2{
+    font-size: 1.2em;
+    margin-top: 0.2em;
+}
+header h1 {
+    margin-bottom: 0;
+}
+
+.highlight{
+    background-color: salmon;
+}
