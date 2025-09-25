@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An in-depth guide to HTML meta tags.">
+    <meta name="author" content="Jane Doe">
+    <script src="week1.js" defer></script>          
+    <title>Meta-CSS Review </title>
+    <style>
+        main{
+            background-color: lightgrey;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: .9em;
+
+        }
+        #content{
+            height: 900px;
+            border: 2px solid grey;
+            margin: 10px;
+        }
+        h1 {
+            justify-self: center;
+            padding-top: 2em;
+            font-size: 3em;
+        }
+        p{
+            color: blue;
+            justify-self: center;
+            font-size: 1.5em;
+        }
+        hr{
+            background-color: blue;
+            border: none;
+            height: 2px;
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+        img{
+            display: block;
+            margin: auto;
+        }
+        #topics, h2{
+            justify-self: center;
+        }
+
+        .list{
+            list-style-type: none;
+            padding-left:s 0;
+            margin-left: 1em;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="content">
+            <h1>HTML, CSS, and JS</h1>
+            <p>The foundational technologies that power websites and web applications</p>
+            <hr>
+            <img src="https://wddbyui.github.io/wdd131/images/trifecta.png" alt="JS, CSS, and HTML logos">
+            <div id="topics">
+                <h2>HyperText Markup Language</h2>
+                <ul class="list">
+                    <li>Defines the structure and content of a web page.</li>
+                    <li>Without HTML there's nothing for the browser to display.</li>
+                </ul>
+                <h2>Cascading Style Sheets</h2>
+                <ul class="list">
+                    <li>Controls how the HTML elements look.</li>
+                    <li>Without CSS pages look plain and unstyled.</li>
+                </ul>
+                <h2>JavaScript</h2>
+                <ul class="list">
+                    <li>Adds interactivity and dynamic behavior.</li>
+                    <li>Without JavaScript nothing on the page responds </li>
+                    <li>dynamically to user actions.</li>
+                </ul>
+            </div>
+        </div> 
+    </main>               
+</body>
+
+</html>
