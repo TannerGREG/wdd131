@@ -9,6 +9,4 @@ document.body.append(newImg);
 
 const myList = ["one","Two","Three"];
 const newDiv = document.createElement("div");
-newDiv.innerHTML = " <ul>
-
-"
+newDiv.innerHTML = " <ul> "
