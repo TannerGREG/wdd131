@@ -12,6 +12,7 @@
 header{
     max-width: 100%;
     background-color: var(--primary-color);
+    padding-top: 3em;
 }
 h1{
     font: var(--secondary-font);
@@ -62,6 +63,9 @@ body h2{
 img{
     max-width: 100%;
     object-fit: cover;
+    border: 0.5em solid white;
+    box-shadow: 0 4px solid black;
+    justify-self: center;
 }
 .gallery{
     display: grid;
