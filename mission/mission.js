@@ -7,8 +7,8 @@ selectElem.addEventListener('change', changeTheme);
 function changeTheme() {
     let current = selectElem.value;
     if (current == 'dark') {
-        document.body.style.backgroundColor = '#121212';
-        document.body.style.color = '#f0f0f0';
+        document.body.style.backgroundColor = 'black';
+        document.body.style.color = 'white';
         logo.src = 'byui-logo-white.png';
 
         localStorage.setItem('theme', 'dark');
