@@ -19,36 +19,19 @@ h1{
     font-size: 2em;
     justify-self: center;
 }
-h2{
+button{
+    display: block;
     font: var(--secondary-font);
     color: var(--text-light);
+    background-color: var(--primary-color);
+    border:none;
+    margin:0 auto;
 }
 
 nav {
-    padding-top: 20px;
+
     text-align: center;
-    padding-bottom: 1em;32
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
+    padding-bottom: 1em;
 }
 nav a {
     display: block;   
@@ -78,11 +61,42 @@ body h2{
 
 img{
     max-width: 100%;
+    object-fit: cover;
 }
 .gallery{
+    display: grid;
+    grid-template-columns: 1fr;
     margin: auto ;
 }
 
 footer{
     background-color: var(--primary-color);
+}
+
+
+@media screen and (min-width: 700px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+    nav{
+        display: none;
+    }
+    button{
+        padding-bottom: 1em;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .gallery{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    button{
+        display:none;
+    }
+    nav{
+        display: flex;
+        justify-content: center;
+        gap: 1.5em;
+
+    }
 }
