@@ -93,10 +93,10 @@ img dialog{
     width: 90%;
     max-height: 100%;
 }
-.close_viewer{
+.close-viewer{
     position: absolute;
-    top: 20vh;
-    left: 10vh;
+    top: 1em;
+    left: 1em;
 }
 
 

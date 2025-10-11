@@ -28,7 +28,8 @@ closeButton.addEventListener("click", () => dialog.close());
 
 dialog.addEventListener('click', (event) => {
   if (event.target === dialog) {dialog.close();
-}});
+  }
+    });
 
 const galleryImages = document.querySelectorAll(".gallery img");
 
