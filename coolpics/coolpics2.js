@@ -35,8 +35,6 @@ const galleryImages = document.querySelectorAll(".gallery img");
 
 galleryImages.forEach(img => {
     img.addEventListener("click", () => {
-        const dialogImg = dialog.querySelector("img");
-        dialogImg.src = "norris-full.jpeg";
         dialog.showModal();
     });
  });
