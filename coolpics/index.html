@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Tanner Brown">
     <meta name="description" content="A responsive photography gallery, that looks good on small and large screens."/>
-    <link rel="stylesheet" href="coolpics.css">
+    <link rel="stylesheet" href="coolpics2.css">
     <title>Cool Pics 📷</title>
-    <script src="coolpics.js" defer></script>
+    <script src="coolpics2.js" defer></script>
     
 </head>
 <body>
     <header>
         <h1>Cool Pics 📷</h1>
 
-        <button>Menu</button>
-        <nav>
+        <button class="menu-button">Menu</button>
+
+        <nav class="menu hide">
             <a href="index.html">Home</a>
             <a href="people.html">People</a>
             <a href="places.html">Places</a>
@@ -57,5 +58,12 @@
         </section>
     </main>
     <footer>©2023 Not a real site 😀</footer>
+    <dialog class="viewer">
+        <div class="viewerstuff">
+            <img src="norris-full.jpeg" alt="Full image view">
+            <button class="close-viewer">X</button>
+        </div>
+    </dialog>
+
 </body>
 </html>
