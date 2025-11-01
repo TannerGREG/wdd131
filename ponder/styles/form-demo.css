@@ -24,15 +24,15 @@ form p{
 label {
   margin-bottom: 0.3em;
 }
-input, select {
+input, select{
+  border: 1px solid black;
   font-size: 1em;
   width: 100%;
-}
-textarea{
-  font-size: 1em;
-  width: 100%;
-  min-height: 80px;
+  min-height: 40px;
   resize: vertical;
+}
+.address input {
+  min-height: 120px;
 }
 button {
   background-color: green;
