@@ -25,25 +25,26 @@ function validateForm(event) {
 function togglePaymentDetails(e) {
   console.log("change happened", e.target)
   // get a reference to the form. We can access all the named form inputs through the form element.
-  const theForm = document.querySelector("#payment");
   // we will also need the creditCardContainer and paypalUsernameContainer
   const creditCardContainer = document.querySelector("#creditCardInfo");
   const paypalContainer = document.querySelector("#paypalInfo");
+  const creditCardInput = document.querySelector("#creditcardNumber");
+  const paypalInput = document.querySelector("#payPalUsername");
 
   // Hide payment containers by adding the '.hide' class to each of them
   creditCardContainer.classList.add("hide");
   paypalContainer.classList.add("hide");
   // Disable required for payment fields...if we hide a required field the browser will throw an error when we try to submit!
-  creditCardContainer.required = false;
-  paypalContainer.required = false;
+  creditCardInput.required = false;
+  paypalInput.required = false;
 
   // Show the container based on the selected payment method, and add the required attribute back.
-  if(theForm.#payment.value === "Credit Card") {
+  if (e.target.value === "credit") {
     creditCardContainer.classList.remove("hide");
-    theForm.creditCardContainer.required = true;
-  } else if (theForm.#payPalUsername.value === "Pay Pal") {
+    document.querySelector("#creditcardNumber").required = true;
+  } else if (e.target.value === "paypal") {
       paypalContainer.classList.remove("hide");
-      theForm.paypalContainer.required = true;
+      document.querySelector("#payPalUsername").required = true;
   }
 }
 
@@ -56,4 +57,4 @@ function showErrors(errors) {
 // attach a change event handler to the paymentMethod input
 document.querySelector("#payment").addEventListener("change", togglePaymentDetails)
 // attach a submit event handler to the form
-document.querySelector("#checkoutForm"),addEventListener("submit", validateForm);
+document.querySelector("#checkoutForm").addEventListener("submit", validateForm);
