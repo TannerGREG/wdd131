@@ -19,3 +19,13 @@ header h1 {
 .highlight{
     background-color: salmon;
 }
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.big-projects {
+    grid-column: 1/2;
+}
+.ponder{
+    grid-column: 2/3;
+}
