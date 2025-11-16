@@ -153,6 +153,10 @@ footer a{
 
 
 @media screen and (min-width: 600px) {
+
+main{
+    padding: 1em;
+}
 .recipe-card {
     display: flex;
 }
