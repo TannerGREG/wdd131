@@ -84,7 +84,6 @@ console.log(simpleSort);
 
 function searchList(list, query) {
     function searchCallBack(item) {
-        console.log(item);
         return ( item.name.toLowerCase().includes(query.toLowerCase()) ||
             item.description.toLowerCase().includes(query.toLowerCase()) ||
             item.tags.find((tag)=> tag.toLowerCase().includes(query.toLowerCase()))
@@ -99,5 +98,7 @@ function sortLength(object) {
 
 }
 
-searchList(hikes, "tetons");
+searchList(hikes,"Yellowstone");
+searchList(hikes, "moderate");
+searchList(hikes, "al");
 hikes[0].tags.in
