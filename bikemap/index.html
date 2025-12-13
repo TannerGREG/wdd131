@@ -1,42 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bike Map</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="./Scripts/bikeInfo.js"></script>
-  <script src="./Scripts/config.js"></script>
-  <script src="./Scripts/map.js"></script>
-  <script src="./Scripts/loadMap.js"></script>
+    <meta charset="UTF-8">
+    <title>Easy-Travel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
-<body>
-  <header>
+<body id="top">
+    <header>
         <div class="image-container">
-            <img src="./images/logo.PNG" alt="bycicle with a power symble Logo">
+            <img src="./images/logo.PNG" alt="Logo">
         </div>
         <nav>
             <a href="index.html">Home</a>
+            <a href="map.html">Map Page</a>
             <a href="about.html">About Us</a>
-            <a href="services.html">Services</a>
-            <a href="map.html">Bike Map</a>
-            <a href="contact.html">Contact</a>
+            <a href="how.html">How to Run</a>
         </nav>
-        <div class="container" onclick="myFunction(this)">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-        </div>
-</header>
-<div class="map-title title">
-  <h1>Map of Bike Locations</h1>
-</div>
+    </header>
+<main>
+  <section class="title hero">
+    <h1>Easy-Travel</h1>
+    <p>A smarter, cleaner way to get around Rexburg</p>
+  </section>
 
-<div id="googleMap" style="width: 100%;height:800px;"></div>
+  <section class="card-grid">
 
- <footer>
+    <div class="card">
+      <img src="images/bikeride-1.JPG" alt="Person riding a bike">
+      <h2>About Us</h2>
+      <p>
+        Rexburg faces parking shortages and heavy car traffic.
+        This project explores bikes as a smarter transportation solution
+        designed for college life.
+      </p>
+    </div>
+
+    <div class="card">
+      <img src="images/simple_map_drawing.png" alt="Drawing of a map">
+      <h2>Bike Map</h2>
+      <p>
+        View nearby e-bikes, check availability, battery levels,
+        and find the closest ride using an interactive map.
+      </p>
+    </div>
+
+    <div class="card">
+      <img src="images/gears.png" alt="Gears in motion">
+      <h2>How It Works</h2>
+      <p>
+        The site uses JavaScript and Google Maps to load bike data,
+        update markers dynamically, and show your location.
+      </p>
+    </div>
+
+  </section>
+</main>
+
+    <footer>
         <p>&copy; 2025 E-Bike Rentals. All rights reserved.</p>
         <a href="#top">Back to Top</a>
-  </footer>
+    </footer>
 </body>
 </html>
