@@ -7,14 +7,12 @@
     --dark-text: black;
 }
 
-/* Resets defaults styling */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Header styles */
 header {
     background-color: var(--primary-color);
     height: 100vh;
@@ -35,7 +33,6 @@ header.collapesed {
     width: 60px;
 }
 
-/* logo */
 .image-container img {
     width: 100px;
     height: auto;
@@ -74,7 +71,6 @@ nav a:hover {
     transition: 0.4s;
 }
 
-/* Main content */
 main {
     margin-left: 200px;
     padding: 40px;
@@ -83,7 +79,7 @@ main {
     color: var(--dark-text);
     font-family: Arial, sans-serif;
 }
-/* Hero section */
+
 .hero {
     text-align: center;
     margin-bottom: 40px;
@@ -112,9 +108,23 @@ main {
     padding: 20px;
     color: var(--accent1-color);
     box-shadow: 0 6px 15px rgba(0,0,0,0.25);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
+.about-card{
+    margin: 2em;
+    display: flex;
+    gap: 2em;
+    font-size: 1.2em;
+    background-color: var(--primary-color);
+    border-radius: 15px;
+    padding: 20px;
+    color: var(--accent1-color);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+}
+.about-card p {
+    align-self: center;
+    text-indent: 2em;
+    line-height: 1.5em;
+}
 .card img {
     width: 100%;
     border-radius: 10px;
@@ -138,10 +148,11 @@ main {
 
 
 /* Map page */
-.title h1 {
+.title  {
     width: 100%;
     color: var(--accent1-color);
     border: var(--secondary-color) 3px solid;
+    border-radius: 8px;
     background-color: var(--primary-color);
     font-size: 2rem;
     color: var(--accent1-color);
@@ -149,7 +160,7 @@ main {
     margin-top: .05em;
     margin-bottom: 0.5em;
     letter-spacing: 2px;
-    padding: 1em;
+    padding: .05em;
 }
 
 /* Footer content */
